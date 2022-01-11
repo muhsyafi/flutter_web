@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+  <title>Aplikasi utama - PDAM Kabupatan Batang</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="p-8">
+  <div class="p-2">
+    <h1 class="font-bold text-lg">Penjelasan singkat</h1>
+    <h1 class="mb-4">Aplikasi utama, yang saya buat dan kembangan sendiri (fullstack) di PDAM Kabupaten Batang guna menggantikan aplikasi desktop yang sudah tidak dikembangkan oleh pihak yang bersangkutan.
+      Awal mulanya pada tahun 2016 saya menggembangkan aplikasi ini menggunakan monolithic design, dimana seluruh aplikasi menjadi satu dengan Framework express.js dengan template jade (pug) dengan library jQuery dan Vue.js.
+      Namun pada tahun 2019, bertepatan saya membuat aplikasi mobile Android "Banyu" untuk perusahaan, munculah ide untuk memisah-misahkan seluruh service menjadi lebih kecil agar perawatan dan pengembangan lebih mudah kedepannya,
+      atau istilahnya kerennya dengan sebutan "Microservice". Juga untuk teknologi front end saya mempercayakan menggunakan react dengan framework NextJS dengan SSRnya.
+      Perubahan arsitektur dari monolith ke microservice rampung seluruhnya pada bulan Desember 2021, baik dari front end maupun backend.
+      Aplikasi ini mencakup hampir sebagian besar keperluan pengolahan data baik dari rekening pelanggan sampai dengan manajemen kepegawaian.
+    </h1>
+    <table>
+      <thead>
+      <tr>
+        <th colspan="3" align="left" class="text-lg">Teknologi yang dipakai</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td rowspan="3" valign="top">Front End</td>
+        <td rowspan="3" valign="top">:</td>
+        <td>- React</td>
+      </tr>
+      <tr>
+        <td>- Next.JS</td>
+      </tr>
+      <tr>
+        <td>- Tailwind CSS</td>
+      </tr>
+      <tr>
+        <td>Template</td>
+        <td>:</td>
+        <td>- Full Custom</td>
+      </tr>
+      <tr>
+        <td rowspan="3" valign="top">Back End</td>
+        <td rowspan="3" valign="top">:</td>
+        <td>- NodeJS</td>
+      </tr>
+      <tr>
+        <td>- ExpressJS</td>
+      </tr>
+      <tr>
+        <td>- Golang</td>
+      </tr>
+      <tr>
+        <td rowspan="4" valign="top">Database</td>
+        <td rowspan="4" valign="top">:</td>
+        <td>- MySQL (Utama)</td>
+      </tr>
+      <tr>
+        <td>- PostgreSQL (GIS)</td>
+      </tr>
+      <tr>
+        <td>- Redis (Caching)</td>
+      </tr>
+      <tr>
+        <td>- MongoDB (User)</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+    <!-- Umum dan kepegawaian -->
+    <a class="relative w-full h-64" href="../images/app/umum_kepegawaian.png">
+      <div class="top-0 left-0 w-full h-full z-10 absolute">
+        <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+             style="background-color: rgba(0, 0, 0, 0.5)">
+          <label class="text-white">Manajemen umum dan kepegawaian</label>
+        </div>
+      </div>
+      <img src="../images/app/umum_kepegawaian.png" alt=""
+           class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+    </a>
+
+    <!-- Keuangan -->
+    <a class="relative w-full h-64" href="../images/app/keuangan.png">
+      <div class="top-0 left-0 w-full h-full z-10 absolute">
+        <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+             style="background-color: rgba(0, 0, 0, 0.5)">
+          <label class="text-white">Manajemen keuangan dan pelaporan</label>
+        </div>
+      </div>
+      <img src="../images/app/keuangan.png" alt=""
+           class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+    </a>
+
+    <!-- Pelanggan -->
+    <a class="relative w-full h-64" href="../images/app/pelanggan.png">
+      <div class="top-0 left-0 w-full h-full z-10 absolute">
+        <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+             style="background-color: rgba(0, 0, 0, 0.5)">
+          <label class="text-white">Manajemen pelanggan</label>
+        </div>
+      </div>
+      <img src="../images/app/pelanggan.png" alt=""
+           class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+    </a>
+
+    <!-- Rekening -->
+    <a class="relative w-full h-64" href="../images/app/rekening.png">
+      <div class="top-0 left-0 w-full h-full z-10 absolute">
+        <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+             style="background-color: rgba(0, 0, 0, 0.5)">
+          <label class="text-white">Manajemen rekening</label>
+        </div>
+      </div>
+      <img src="../images/app/rekening.png" alt=""
+           class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+    </a>
+
+    <!-- Skematik -->
+    <a class="relative w-full h-64" href="../images/app/skematik.png">
+      <div class="top-0 left-0 w-full h-full z-10 absolute">
+        <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+             style="background-color: rgba(0, 0, 0, 0.5)">
+          <label class="text-white">Skematik jaringan pipa</label>
+        </div>
+      </div>
+      <img src="../images/app/skematik.png" alt=""
+           class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+    </a>
+  </div>
+</div>
+</body>
+</html>

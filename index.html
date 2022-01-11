@@ -1,20 +1,38 @@
 <!doctype html>
 <html>
-	<head>
-		<title>Muh. Syafiudin</title>
-		<script src="https://cdn.tailwindcss.com"></script>
-	</head>
-	<body>
-		<div class="p-8">
-			<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-				<a class="relative w-full" href="#">
-					<div class="absolute top-0 left-0 w-full h-full z-10 p-4">
-						<h1 class="font-bold font-black text-2xl">PDAM Kabupaten Batang</h1>
-						<label>Website / Aplikasi Internal PDAM Kabupaten Batang</label>
-					</div>
-					<img src="./images/example.png" alt="" class="rounded-3xl shadow-2xl absolute top-0 left-0 bg-contain z-0">
-				</a>
-			</div>
-		</div>
-	</body>
+<head>
+    <title>Muh. Syafiudin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="p-8">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <!-- Sistem login -->
+        <a class="relative w-full h-64" href="https://login.pdambatang.co.id">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <h1 class="font-bold text-white text-2xl">PDAM Kabupaten Batang</h1>
+                    <label class="text-white">Sistem login dengan OTP WA/SMS dan QR</label>
+                </div>
+            </div>
+            <img src="./images/app/login.png" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+
+        <!-- Sistem App -->
+        <a class="relative w-full h-64" href="./app">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <h1 class="font-bold text-white text-2xl">PDAM Kabupaten Batang</h1>
+                    <label class="text-white">Aplikasi utama</label>
+                </div>
+            </div>
+            <img src="./images/app/umum_kepegawaian.png" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+    </div>
+</div>
+</body>
 </html>
