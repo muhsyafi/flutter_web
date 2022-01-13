@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+<head>
+    <title>Aplikasi mobile (Android) - PDAM Kabupatan Batang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="p-8">
+    <div class="p-2">
+        <a href="/" class="text-blue-500">Kembali ke halaman utama</a>
+        <h1 class="font-bold text-lg">Penjelasan singkat</h1>
+        <h1 class="mb-4"><a href="https://play.google.com/store/apps/details?id=com.pdam.batang" class="text-blue-500">BANYU</a> - Saya menamainya, yes mulai dari backend, frontend, db, mobile, logo, sampai nama pun saya urus sendirian. Awal mula diluncurkan, karena sekalian hari jadi / HUT
+            perusahaan pada tanggal 30 Januari 2019, sehingga saya diminta untuk membuat aplikasi Android ini, dengan tujuan sebagai jembatan informasi antara pelanggan dan perusahaan. Pada tahap pertama "yang penting jadi", saya menggunakan IONIC sebagai teknologinya. Setelah 4 bulan aplikasi berjalan,
+            saya berinisiatif sendiri merefactoring seluruh kode dari IONIC ke Flutter, proses memakan waktu sekitar 3-4 bulan untuk refactoring. Untuk tampilan dan fungsi sudah
+            mengalami berbagai perubahan dan tambahan sesuai keingin dari bagian yang membutuhkan. Sampai saat ini, aplikasi berjalan dan sudah diinstal lebih dari 7.000 devices (berdasarkan dari laporan android console).
+            Aplikasi Banyu, menggunakan sistem satu aplikasi untuk dua keperluan, yaitu bisa sebagai aplikasi pelanggan (publik) atau bisa sebagai aplikasi karyawan (privat). Jika login di aplikasi menggunakan NIPP
+            karyawan, otomatis aplikasi berubah menjadi aplikasi privat.
+            <br/>
+            Semua hak akses bersifat dinamis, yaitu bisa menggunakan acuan KODE jabatan karyawan atau per NIPP/Karyawan masing-masing, baik itu akses lihat dan atau akses eksekusi.
+        </h1>
+        <table class="mb-4">
+            <thead>
+            <tr>
+                <th colspan="3" align="left" class="text-lg">Fitur / Menu</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="1" valign="top">Pelanggan</td>
+                <td rowspan="1" valign="top">:</td>
+                <td>- Cek tagihan</td>
+            </tr>
+            <tr><td></td><td></td><td>- Pembayaran (BRI Virtual Account / BRIVA)</td></tr>
+            <tr><td></td><td></td><td>- Pengaduan</td></tr>
+            <tr><td></td><td></td><td>- OTP Verifikasi pelanggan (SMS Masking / WA)</td></tr>
+            <tr><td></td><td></td><td>- Perkiraan tagihan bulan ini</td></tr>
+            <tr><td></td><td></td><td>- Simulasi tarif</td></tr>
+            <tr><td></td><td></td><td>- Informasi gangguan / perbaikan</td></tr>
+            <tr><td></td><td></td><td>- Riwayat pelanggan</td></tr>
+            <tr><td></td><td></td><td>- Notifikasi jika terbit rekening</td></tr>
+            <tr><td></td><td></td><td>- Notifikasi jika aduan telah ditangani dan atau selesai</td></tr>
+            <tr><td></td><td></td><td>- Notifikasi jika pembacaan meter telah dilaksanakan (sehingga bisa cek perkiraan tagihan bulan ini)</td></tr>
+            <tr>
+                <td rowspan="1" valign="top">Karyawan</td>
+                <td rowspan="1" valign="top">:</td>
+                <td>- Login ke aplikasi Banyu ini menggunakan NIPP karyawan dengan sistem OTP (SMS Masking / WA), login dilakukan sekali</td>
+            </tr>
+            <tr><td></td><td></td><td>- Login QR, login ke sistem utama <a class="text-blue-500" href="https://app.pdambatang.co.id">app.pdambatang.co.id</a> hanya menggunakan scan QR dengan aplikasi Banyu dari perangat masing-masing</td></tr>
+            <tr><td></td><td></td><td>- Riwayat kepegawaian secara detail</td></tr>
+            <tr><td></td><td></td><td>- Persentase bagian penagihan</td></tr>
+            <tr><td></td><td></td><td>- GIS / Lokasi pelanggan by koordinat dan foto rumah pelanggan</td></tr>
+            <tr><td></td><td></td><td>- Cek rekap absensi, sehingga terlihat jelas potongan dan detail absensi setiap hari</td></tr>
+            <tr><td></td><td></td><td>- Input data lokasi GIS dan foto rumah pelanggan</td></tr>
+            <tr><td></td><td></td><td>- Sistem pembacaan / pencatatan meter pelanggan</td></tr>
+            <tr><td></td><td></td><td>- Daftar aduan dari pelanggan</td></tr>
+            <tr><td></td><td></td><td>- Rangkuman rekening (perkiraan pendapatan perusahaan) yang telah dibaca / dicatat oleh petugas</td></tr>
+            <tr><td></td><td></td><td>- Notifikasi jika aduan dari pelanggan / CS kepada masing-masing petugas yang mempunyai wewenang, baik akses lihat atau eksekusi</td></tr>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3" align="left" class="text-lg">Teknologi yang dipakai</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="1" valign="top">Front End</td>
+                <td rowspan="1" valign="top">:</td>
+                <td>- Flutter</td>
+            </tr>
+            <tr>
+                <td>Template</td>
+                <td>:</td>
+                <td>- Full Custom</td>
+            </tr>
+            <tr>
+                <td>Ikon</td>
+                <td>:</td>
+                <td>- Isometric from <a href="https://freepik.com" class="text-blue-500">freepik.com</a></td>
+            </tr>
+            <tr>
+                <td>State Management</td>
+                <td>:</td>
+                <td>- GetX</td>
+            </tr>
+            <tr>
+                <td rowspan="2" valign="top">Back End</td>
+                <td rowspan="2" valign="top">:</td>
+                <td>- NodeJS</td>
+            </tr>
+
+            <tr>
+                <td>- Golang</td>
+            </tr>
+            <tr>
+                <td rowspan="4" valign="top">Database</td>
+                <td rowspan="4" valign="top">:</td>
+                <td>- MySQL (Utama)</td>
+            </tr>
+            <tr>
+                <td>- PostgreSQL (GIS)</td>
+            </tr>
+            <tr>
+                <td>- Redis (Caching)</td>
+            </tr>
+            <tr>
+                <td>- SQLite (Client/Mobile DB)</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+        <!-- Home pelanggan -->
+        <a class="relative w-full h-full" href="../images/banyu/home.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Halaman utama (pelanggan)</label>
+                </div>
+            </div>
+            <img src="../images/banyu/home.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Home karyawan -->
+        <a class="relative w-full h-full" href="../images/banyu/home_karyawan.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Halaman utama (karyawan)</label>
+                </div>
+            </div>
+            <img src="../images/banyu/home_karyawan.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- cek tagihan -->
+        <a class="relative w-full h-full" href="../images/banyu/cek_home.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Cek tagihan</label>
+                </div>
+            </div>
+            <img src="../images/banyu/cek_home.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- cek tagihan hasil -->
+        <a class="relative w-full h-full" href="../images/banyu/cek_hasil.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Hasil cek tagihan</label>
+                </div>
+            </div>
+            <img src="../images/banyu/cek_hasil.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- cek tagihan foto -->
+        <a class="relative w-full h-full" href="../images/banyu/cek_foto.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Foto pembacaan / pencatatan meter</label>
+                </div>
+            </div>
+            <img src="../images/banyu/cek_foto.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- pembayaran total -->
+        <a class="relative w-full h-full" href="../images/banyu/pembayaran_total.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Menu pembayaran</label>
+                </div>
+            </div>
+            <img src="../images/banyu/pembayaran_total.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- pembayaran BRIVA -->
+        <a class="relative w-full h-full" href="../images/banyu/pembayaran_briva.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Menu pembayaran (BRIVA)</label>
+                </div>
+            </div>
+            <img src="../images/banyu/pembayaran_briva.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Aduan buat -->
+        <a class="relative w-full h-full" href="../images/banyu/aduan_buat.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Menu input pengaduan</label>
+                </div>
+            </div>
+            <img src="../images/banyu/aduan_buat.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Aduan home -->
+        <a class="relative w-full h-full" href="../images/banyu/aduan_home.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Menu (pelanggan) daftar pengaduan</label>
+                </div>
+            </div>
+            <img src="../images/banyu/aduan_home.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Aduan riwayat -->
+        <a class="relative w-full h-full" href="../images/banyu/aduan_riwayat.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Menu (pelanggan) riwayat pengaduan</label>
+                </div>
+            </div>
+            <img src="../images/banyu/aduan_riwayat.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Aduan hasil -->
+        <a class="relative w-full h-full" href="../images/banyu/aduan_hasil_perbaikan.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Menu (pelanggan) response petugas</label>
+                </div>
+            </div>
+            <img src="../images/banyu/aduan_hasil_perbaikan.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Aduan ulasan -->
+        <a class="relative w-full h-full" href="../images/banyu/aduan_ulasan.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Menu (pelanggan) ulasan</label>
+                </div>
+            </div>
+            <img src="../images/banyu/aduan_ulasan.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Simulasi tarif-->
+        <a class="relative w-full h-full" href="../images/banyu/simulasi.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Menu simulasi tarif</label>
+                </div>
+            </div>
+            <img src="../images/banyu/simulasi.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Informasi -->
+        <a class="relative w-full h-full" href="../images/banyu/informasi.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Informasi kepada pelangan</label>
+                </div>
+            </div>
+            <img src="../images/banyu/informasi.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Tentang -->
+        <a class="relative w-full h-full" href="../images/banyu/tentang.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Tentang aplikasi</label>
+                </div>
+            </div>
+            <img src="../images/banyu/tentang.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Karyawan login -->
+        <a class="relative w-full h-full" href="../images/banyu/karyawan_login.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Login karyawan</label>
+                </div>
+            </div>
+            <img src="../images/banyu/karyawan_login.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Menu karyawan -->
+        <a class="relative w-full h-full" href="../images/banyu/karyawan_home.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Halaman khusus karyawan</label>
+                </div>
+            </div>
+            <img src="../images/banyu/karyawan_home.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Karyawan detail -->
+        <a class="relative w-full h-full" href="../images/banyu/karyawan_detail.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Detail data kepegawaian</label>
+                </div>
+            </div>
+            <img src="../images/banyu/karyawan_detail.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Karyawan persentase -->
+        <a class="relative w-full h-full" href="../images/banyu/karyawan_persentase_penagihan.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Persentase penagihan</label>
+                </div>
+            </div>
+            <img src="../images/banyu/karyawan_persentase_penagihan.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Karyawan absensi rangkuman -->
+        <a class="relative w-full h-full" href="../images/banyu/karyawan_absensi_potongan.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Rangkuman absensi</label>
+                </div>
+            </div>
+            <img src="../images/banyu/karyawan_absensi_potongan.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Karyawan absensi detail -->
+        <a class="relative w-full h-full" href="../images/banyu/karyawan_absensi_detail.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Detail absensi</label>
+                </div>
+            </div>
+            <img src="../images/banyu/karyawan_absensi_detail.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Karyawan aduan daftar -->
+        <a class="relative w-full h-full" href="../images/banyu/aduan_admin.jpeg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Daftar aduan (menu petugas / karyawan)</label>
+                </div>
+            </div>
+            <img src="../images/banyu/aduan_admin.jpeg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Karyawan aduan ambil -->
+        <a class="relative w-full h-full" href="../images/banyu/aduan_riwayat_karyawan.jpg">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <label class="text-white">Menu proses aduan oleh petugas</label>
+                </div>
+            </div>
+            <img src="../images/banyu/aduan_riwayat_karyawan.jpg" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+
+
+    </div>
+</div>
+</body>
+</html>
