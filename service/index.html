@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <title>Aplikasi utama - PDAM Kabupatan Batang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="p-8">
+    <div class="p-2">
+        <a href="/" class="text-blue-500">Kembali ke halaman utama</a>
+        <h1 class="font-bold text-lg">Penjelasan singkat</h1>
+        <h1 class="mb-4">Beberapa sistem service, sebagai pendukung terhadap service utama. Dibangun dengan ExpressJS, Deno, dan Golang
+        </h1>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3" align="left" class="text-lg">Penjabaran</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Api</td>
+                <td>:</td>
+                <td>- Sebagai salah satu service backend utama yang menangani Rekening, Kepegawaian, Pelanggan, dan Skematik</td>
+            </tr>
+            <tr>
+                <td>App</td>
+                <td>:</td>
+                <td>- Sistem lama (monolith) yang sudah tidak terpakai, tapi tetap dibutuhkan, sehingga tidak saya matikan</td>
+            </tr>
+            <tr>
+                <td>Auth</td>
+                <td>:</td>
+                <td>- Service backend yang menangani fungsi enkripsi, otentikasi dan hak akses user</td>
+            </tr>
+            <tr>
+                <td>Botpdam dan Botumum</td>
+                <td>:</td>
+                <td>- Service Bot Telegram untuk internal dan pelanggan</td>
+            </tr>
+            <tr>
+                <td>Cron</td>
+                <td>:</td>
+                <td>- Service yang menangani beberapa fungsi untuk keperluan otomasi</td>
+            </tr>
+            <tr>
+                <td>DSML</td>
+                <td>:</td>
+                <td>- Service untuk menangani pembaca / pencatat meter</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Notif</td>
+                <td>:</td>
+                <td>- Service yang berfokus menangani dan mengolah data notifikasi baik itu lewat SMS, WA, Telegram, atau Notifikasi lewat Aplikasi Android "Banyu"</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Pay</td>
+                <td>:</td>
+                <td>- Service payment gateway untuk pembayaran yang dilakukan oleh PPOB atau mitra pembayaran, dengan total mitra 11 biller</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Virtual Account</td>
+                <td>:</td>
+                <td>- Service yang fokus menangani proses pembuatan dan pembayaran lewat Virtual Account (saat ini hanya BRIVA)</td>
+            </tr>
+            <tr>
+                <td>Assets</td>
+                <td>:</td>
+                <td>- Service backend yang berjalan di mesin server kedua, untuk kepeluan serving asset baik itu gambar, video, atau file</td>
+            </tr>
+            <tr>
+                <td>Banyu</td>
+                <td>:</td>
+                <td>- Service backend yang berjalan di mesin server kedua, untuk aplikasi Android "Banyu"</td>
+            </tr>
+            <tr>
+                <td>Banyu</td>
+                <td>:</td>
+                <td>- Service backend yang berjalan di mesin server kedua, yang berfokus pada upload file atau data dari mobile maupun web</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <!-- Service -->
+        <a class="relative w-full h-64" href="../images/service/pm2.png">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <h1 class="font-bold text-white text-2xl leading-none">Service pendukung</h1>
+                    <label class="text-white leading-none">Sistem pendukung untuk beberapa aplikasi</label>
+                    <h1 class="text-white leading-none">Stack : ExpressJS, Golang, Deno</h1>
+                </div>
+            </div>
+            <img src="../images/service/pm2.png" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+        <!-- Service pisah -->
+        <a class="relative w-full h-64" href="../images/service/pm2_10.13.png">
+            <div class="top-0 left-0 w-full h-full z-10 absolute">
+                <div class="bg-gray-500 rounded-br-3xl rounded-bl-3xl p-4 absolute bottom-0 left-0 w-full"
+                     style="background-color: rgba(0, 0, 0, 0.5)">
+                    <h1 class="font-bold text-white text-2xl leading-none">Service pendukung lainnya</h1>
+                    <label class="text-white leading-none">Sistem pendukung untuk beberapa aplikasi</label>
+                    <h1 class="text-white leading-none">Stack : ExpressJS</h1>
+                </div>
+            </div>
+            <img src="../images/service/pm2_10.13.png" alt=""
+                 class="rounded-3xl shadow-2xl top-0 left-0 object-cover z-0 h-full w-full">
+        </a>
+    </div>
+</div>
+</body>
+</html>
